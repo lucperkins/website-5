@@ -1,4 +1,6 @@
-# Clustering Guide
+---
+title: Clustering guide
+---
 
 ## Overview
 

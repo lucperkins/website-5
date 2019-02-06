@@ -2,4 +2,8 @@
 title: FAQ
 ---
 
-{{< faq >}}
+{{< faq "General" >}}
+
+{{< faq "Configuration" >}}
+
+{{< faq "System requirements" >}}

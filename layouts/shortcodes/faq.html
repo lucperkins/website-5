@@ -1,5 +1,9 @@
-{{ $faq := site.Data.faq }}
-<table>
+{{ $faq    := site.Data.faq }}
+{{ $key    := .Get 0 }}
+{{ $family := index $faq $key }}
+<h2>{{ $key }}</h2>
+
+<table class="faq">
   <thead>
     <tr>
       <th>
@@ -15,7 +19,7 @@
     </tr>
   </thead>
   <tbody>
-    {{ range $faq }}
+    {{ range $family }}
     {{ $question := .q | markdownify }}
     {{ $answer   := .a | markdownify }}
     <tr>
